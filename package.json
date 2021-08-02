@@ -1,0 +1,17 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:cnjm/Blog.git",
+  "author": "cnjm <1837847333@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "bootstrap": "yarn add",
+    "docs:dev": "vuepress dev docs",
+    "docs:temp": "vuepress dev docs --temp .temp",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  }
+}
