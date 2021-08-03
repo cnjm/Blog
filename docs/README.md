@@ -2,7 +2,7 @@
 home: true
 heroImage: /hero.png
 actionText: 现在浏览 →
-actionLink: /guide/
+actionLink: /JavaScript/
 features:
 - title: 学习
   details: 好问好学，永无止境。
