@@ -2,13 +2,13 @@
 home: true
 heroImage: /hero.png
 actionText: 现在浏览 →
-actionLink: /JavaScript/
+actionLink: /practical/
 features:
-- title: 学习
-  details: 好问好学，永无止境。
-- title: 摘录
-  details: 令人喜爱，自难相忘。
-- title: 分享
-  details: 人类进步，源于分享。
+- title: 文档
+  details: 提供一些个人开源的文档方便阅读。
+- title: 文章
+  details: 分享一些有趣的有用的东西。
+- title: 笔记
+  details: 记录一些奇奇怪怪的东西以备忘。
 footer: MIT Licensed | Copyright © 2021-present cnjm
 ---

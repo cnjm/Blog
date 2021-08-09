@@ -30,3 +30,45 @@ console.log(fruits.join(" * ")); //Banana * Orange * Apple * Mango
 类似 toString()
 
 可以规定分隔符将所有数组元素结合为一个字符串
+
+## pop()
+``` js
+let fruits = ["Banana", "Orange","Apple", "Mango"];
+console.log(fruits.pop()); //Mango
+```
+从数组中删除最后一个元素,并返回该元素
+
+## push()
+``` js
+let fruits = ["Banana", "Orange","Apple", "Mango"];
+console.log(fruits.push("Kiwi")); //5
+```
+从数组最后添加一个元素,并返回该数组的长度
+
+## shift()
+``` js
+let fruits = ["Banana", "Orange","Apple", "Mango"];
+console.log(fruits.shift()); //Banana
+```
+从数组中删除第一个元素,并返回该元素
+
+## unshift()
+``` js
+let fruits = ["Banana", "Orange","Apple", "Mango"];
+console.log(fruits.unshift("Lemon")); //5
+```
+从数组开头添加元素,并返回该数组的长度
+
+## splice()
+``` js
+let fruits = ["Banana", "Orange","Apple", "Mango"];
+//在包含下标为2的位置往后删除1个项，并插入"Lemon", "Kiwi"
+console.log(fruits.splice(2, 1, "Lemon", "Kiwi")); //Apple
+```
+可用于向数组添加新项,并返回一个包含已删除项的数组
+
+第一个参数（2）定义了应添加新元素的位置（拼接）。
+
+第二个参数（0）定义应删除多少元素。
+
+其余参数（“Lemon”，“Kiwi”）定义要添加的新元素。

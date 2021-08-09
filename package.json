@@ -13,5 +13,8 @@
   },
   "devDependencies": {
     "vuepress": "^1.8.2"
+  },
+  "dependencies": {
+    "cnjm-practical": "^1.0.2"
   }
 }

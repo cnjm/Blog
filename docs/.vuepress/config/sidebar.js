@@ -6,7 +6,10 @@ module.exports = {
     },
     {
       title: '拓展',
-      children: ['50_对象'],
+      children: ['50_obj'],
     },
-  ]
+  ],
+  '/practical/': [
+    '', '01_usage', '05_date'
+  ],
 }
