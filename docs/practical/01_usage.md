@@ -8,6 +8,7 @@ npm install cnjm-practical
 import practical from 'cnjm-practical'
 ```
 
+[npm](https://www.npmjs.com/package/cnjm-practical)
 practical 包含所有的可用方法
 
 ::: tip 提示
@@ -19,8 +20,10 @@ practical 可自定
 ## CDN
 
 ```js
-// 使用前通过script引入注意x.x.x 为版本号，文档更新时最新版本为1.0.2，最新版本情义npm为准
-// https://www.npmjs.com/package/cnjm-practical
+// 建议使用最新版本
+<script src="https://cdn.jsdelivr.net/npm/cnjm-practical"></script>
+
+// 以下可以指定版本引入注意x.x.x 为版本号最新版本请以npm为准
 <script src="https://cdn.jsdelivr.net/npm/cnjm-practical@x.x.x/dist/cnjm-practical.js"></script>
 // other
 <script>
