@@ -36,3 +36,16 @@ practical 可自定
 ::: warning 警告
 \$practical 为 cnjm-practical.js 保留的全局变量，请勿冲突。
 :::
+
+## 如何使用？
+
+以 npm 引用为例
+
+所有模块都在 practical 上，你可以尝试 log 查看所有暴露的方法
+
+当需要使用该模块上的方法时，你可以
+
+```js
+//此处以format为例，请根据实际使用
+let { format } = $practical.date;
+```

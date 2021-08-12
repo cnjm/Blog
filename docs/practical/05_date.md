@@ -1,5 +1,9 @@
 # date
 
+```js
+let { format, diff, storage } = $practical.date;
+```
+
 ## format()
 
 这个方法包含三个参数：date,format,isUTC
@@ -22,4 +26,27 @@ console.log(format(new Date(), "YY年MM月DD日hh时mm分ss秒SSS毫秒")); // 2
 
 ::: tip
 所有 JavaScript 对象都拥有 toString() 方法。
+:::
+
+## diff()
+
+diff 接受四个参数：startTime,endTime,format,func
+
+| 字段      |                            类型 | 必填 |        说明        |
+| --------- | ------------------------------: | :--: | :----------------: |
+| startTime |        string \| number \| Date |  是  |      开始时间      |
+| endTime   |        string \| number \| Date |  是  |      结束时间      |
+| format    | Y \| M \|D \| h \| m \| s \| ms |  是  |    单位默认 ms     |
+| func      |                        function |  否  | 可传入对数值的处理 |
+
+```js
+console.log(diff(1609434061000, new Date(), "Y")); //1
+console.log(diff(1609434061000, new Date(), "D")); //224
+console.log(diff(1609434061000, new Date(), "", (num) => Math.ceil(num))); //19323249254
+```
+
+::: tip 提示
+对于数值的处理默认为 Math.round，如果需要不同的处理，比如使用 ceil 你可以使 func 为：
+
+(num) => Math.ceil(num)
 :::

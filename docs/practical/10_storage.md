@@ -1,5 +1,9 @@
 # storage
 
+```js
+let { get, getAll, set, setAll, clear, que } = $practical.storage;
+```
+
 所有操作失败统一返回 false,set 成功返回 true，get 成功返回相应数据。
 
 ## set()
@@ -27,11 +31,11 @@ setAll({ key1: "string", key2: { c: 1321 }, key3: [1, 2] });
 
 ## get()
 
-这个方法包含两个个参数：key,subscript(可选)
+这个方法包含两个个参数：key
 
 key 必须为字符串,作为查询存储的 key。
 
-subscript 可以是 string 或者 number
+subscript 可以是 string 或者 number 当
 
 如果存储的 value 是一个 json 对象，会返回该对象下 subscript 属性对应的值
 
@@ -43,9 +47,6 @@ subscript 可以是 string 或者 number
 // key:account
 // value:[{key1:123456},{key2:"654321"}]
 get("account"); //[{key1:123456},{key2:"654321"}]
-get("account", "key1"); //123456
-get("account", "key2"); //"654321"
-get("account", "key3"); //false
 ```
 
 ## getAll()
@@ -63,4 +64,48 @@ getAll();
 ```js
 clear(key); //仅清除该key
 clear();
+```
+
+## que()
+
+当你需要维护一个比如账号列表此类有序的列表时，你可能需要他
+
+que 接受一个 options 对象参数；
+
+| 字段     |                        类型 |      必填       |           说明           |  默认值  |
+| -------- | --------------------------: | :-------------: | :----------------------: | :------: |
+| method   |         get \| set \| clear |       否        |         操作方法         |   get    |
+| key      |                      string |       是        |      存储对象的 key      |    -     |
+| subKey   |            string \| number | set \| clear 是 | get 时不传则获取整个数组 |    -     |
+| value    |    string \| number \| json |     set 是      |  subkey 所需的 value 值  |    -     |
+| position | original \| unshift \| push |       否        |         original         | original |
+
+```js
+// 假设原有一个这样的数组
+set("account", [
+  { key1: 123456, a: "aaa" },
+  { key2: "654321" },
+  { key3: "9999" },
+]);
+
+// 获取该数组中首个 key1 的josn对象
+console.log(que({ method: "get", key: "account", subKey: "key1" }));
+// {key1:123456,a:"aaa"}
+
+// 设置该数组中首个 key1 的josn对象
+console.log(
+  que({
+    method: "set",
+    key: "account",
+    subKey: "key2",
+    value: { text: "value可以是一个json" },
+    position: "unshift",
+  })
+);
+// [{"key2":{"text":"value可以是一个json"}},{"key1":123456,"a":"aaa"},{"key3":"9999"}]
+
+// 删除数组中 下标是0 的元素
+console.log(que({ method: "clear", key: "account", subKey: 0 }));
+// 删除数组中 首个 key1 的元素
+console.log(que({ method: "clear", key: "account", subKey: "key1" }));
 ```
