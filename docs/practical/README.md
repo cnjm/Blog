@@ -7,3 +7,5 @@ v1.0.2 init add date.format
 v1.0.3 add storage
 
 v1.0.4 add storage.que date.diff
+
+v1.0.5 add utils.copy fix que
