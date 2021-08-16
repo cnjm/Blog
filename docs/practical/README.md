@@ -9,3 +9,5 @@ v1.0.3 add storage
 v1.0.4 add storage.que date.diff
 
 v1.0.5 add utils.copy fix que
+
+v1.0.6 add utils.cloneDeep utils.uaCheck

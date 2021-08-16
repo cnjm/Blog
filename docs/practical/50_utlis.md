@@ -21,3 +21,41 @@ oApp.onclick = function() {
   copy("testCopy"); //true
 };
 ```
+
+## cloneDeep()
+
+深拷贝
+
+```js
+cloneDeep(obj);
+```
+
+## uaCheck()
+
+判断当前 ua
+
+支持以下，返回 true 或者 false
+
+Windows
+
+MacOS
+
+Linux
+
+Android
+
+IOS
+
+Mobile
+
+Tablet
+
+WeChat
+
+IPhone
+
+IPad
+
+```js
+uaCheck("Windows");
+```
