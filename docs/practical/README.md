@@ -11,3 +11,5 @@ v1.0.4 add storage.que date.diff
 v1.0.5 add utils.copy fix que
 
 v1.0.6 add utils.cloneDeep utils.uaCheck
+
+v1.0.7 add utils.regToFen utils.regToYuan
