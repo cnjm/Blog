@@ -2,6 +2,8 @@
 
 此文档将说明 cnjm-practical 库的使用，cnjm-practical 是个常用函数/操作封装而成的库
 
+未来将逐渐加入更多更好用的方法
+
 v1.0.2 init add date.format
 
 v1.0.3 add storage
@@ -13,3 +15,5 @@ v1.0.5 add utils.copy fix que
 v1.0.6 add utils.cloneDeep utils.uaCheck
 
 v1.0.7 add utils.regToFen utils.regToYuan
+
+v1.0.8 add url.paramToObj util.getByteLen

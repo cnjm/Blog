@@ -85,3 +85,13 @@ digit:非必填，默认 100 。这将决定数字精度，不在范围内将舍
 console.log(regToYuan(0.2, 1000)); //0.002
 console.log(regToYuan(5000.22)); //50
 ```
+
+## getByteLen()
+
+getByteLen 获取字符长度
+
+中文记作 2 字符
+
+```js
+console.log(getByteLen("hh哈")); //4
+```

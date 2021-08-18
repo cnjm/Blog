@@ -10,6 +10,6 @@ module.exports = {
     },
   ],
   '/practical/': [
-    '', '01_usage', '05_date', '10_storage', '50_utlis'
+    '', '01_usage', '05_date', '10_storage', '15_url', '50_utlis'
   ],
 }
