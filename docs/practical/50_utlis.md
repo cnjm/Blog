@@ -90,8 +90,15 @@ console.log(regToYuan(5000.22)); //50
 
 getByteLen 获取字符长度
 
+接受两个参数  str  utf8
+
+str 需计算的字符串
+
+utf8  一个布尔值 是否utf8计算，utf8一个中文3字节
+
 中文记作 2 字符
 
 ```js
 console.log(getByteLen("hh哈")); //4
+console.log(getByteLen("hh哈",true)); //5
 ```
