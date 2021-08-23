@@ -24,10 +24,6 @@ console.log(format(new Date(), "A-YYYY-MM-DD:hh")); // PM-2021-08-09:05
 console.log(format(new Date(), "YY年MM月DD日hh时mm分ss秒SSS毫秒")); // 21年08月09日05时42分36秒457毫秒
 ```
 
-::: tip
-所有 JavaScript 对象都拥有 toString() 方法。
-:::
-
 ## diff()
 
 diff 接受四个参数：startTime,endTime,format,func
