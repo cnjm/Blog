@@ -5,7 +5,14 @@ module.exports = [
     text: '文档',
     items: [
       { text: 'practical', link: '/practical/' },
+      { text: 'other', link: '/other/' },
     ]
   },
-  { text: 'JavaScript', link: '/JavaScript/' },
+  {
+    text: '笔记',
+    items: [
+      { text: 'JavaScript', link: '/JavaScript/' },
+    ]
+  },
+  { text: '文章', link: 'https://blog.csdn.net/weixin_42998707' },
 ]
