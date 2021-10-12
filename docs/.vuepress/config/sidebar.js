@@ -6,7 +6,7 @@ module.exports = {
     },
     {
       title: '拓展',
-      children: ['50_expand'],
+      children: ['20_compute', '50_expand'],
     },
   ],
   '/practical/': [
