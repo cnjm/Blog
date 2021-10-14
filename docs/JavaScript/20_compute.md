@@ -33,6 +33,10 @@ let newArr = arr.filter((item) => item >= 5);
 let newArr = arr.filter((x) => !remove_arr.some((item) => x === item));
 ```
 
+::: tip
+[practical PSet](https://gitee.com/c_jiaming/practical) 采用 Set 的常用的取集封装
+:::
+
 ### 取交集
 
 ```js
@@ -48,6 +52,34 @@ let newArr = arr1.filter((item) => arr2.includes(item));
 ```
 
 ### 取补集
+
+```js
+//各自补集，
+let one = arr1.filter((val) => {
+  return !(arr2.indexOf(val) > -1);
+});
+let two = arr2.filter((val) => !(arr1.indexOf(val) > -1));
+let sum = [...one, ...two]; //各自都有的将不会存在
+console.log(sum);
+```
+
+### 差集
+
+arr1 中存在而 arr2 没有的
+
+```js
+let arr1 = [1, 2];
+let arr2 = [3, 4];
+let diff = arr1.filter((val) => arr2.indexOf(val) === -1);
+console.log(diff);
+```
+
+### 标题
+
+```js
+```
+
+### 标题
 
 ```js
 ```

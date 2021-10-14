@@ -2,7 +2,7 @@ module.exports = {
   '/JavaScript/': [
     {
       title: '基础',
-      children: ['', '01_Array'],
+      children: ['', '01_Array', '02_ArrayEer'],
     },
     {
       title: '拓展',
